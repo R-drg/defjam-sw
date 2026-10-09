@@ -1,0 +1,36 @@
+# Def Jam: Fight for NY on Nintendo Switch: settings.
+# This file sits next to defjamx.nro (sdmc:/switch/defjamx/). One KEY=VALUE per
+# line; lines starting with # are ignored. Everything is commented out: the
+# defaults are what the release was tested with. Change one thing at a time.
+
+# --- Game files ---------------------------------------------------------------
+
+# Where the extracted disc is (default: sdmc:/switch/defjamx/game).
+#DEFJAM_GAME_DIR=sdmc:/switch/defjamx/game
+
+# --- Clocks -------------------------------------------------------------------
+
+# The CPU limits this port. These raise the clocks while the game runs (the old
+# ones come back on exit): smoother busy scenes, more heat and battery.
+# sys-clk, when installed, may override them with its own profile.
+#DEFJAM_CPU_MHZ=1785
+#DEFJAM_GPU_MHZ=768
+#DEFJAM_MEM_MHZ=1600
+
+# --- Picture and sound --------------------------------------------------------
+
+# 1 stretches the 4:3 picture to 16:9.
+#RECOMP_WIDESCREEN=1
+# Render at a multiple of the original resolution (0.5 to 2). Above 1 costs GPU time.
+#RECOMP_GL_SCALE=1
+# Master volume, 0 to 100.
+#RECOMP_AUDIO_VOLUME=50
+
+# --- Troubleshooting ----------------------------------------------------------
+
+# No log file at all (defjamx_log.txt is written by default).
+#DEFJAM_NO_LOG=1
+# Everything in the log, for bug reports.
+#RECOMP_QUIET=0
+# Sampling profiler: writes prof.bin next to the log (a few percent of one core).
+#RECOMP_NX_PROFILE=1
